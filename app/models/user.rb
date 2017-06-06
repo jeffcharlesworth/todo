@@ -2,9 +2,6 @@ class User < ActiveRecord::Base
   before_save { self.email = email.downcase }
   attr_accessor :password
 
-  validates :first_name, presence: true, length: { minimum: 1, maximum: 100 }
-  validates :last_name, presence: true, length: { minimum: 1, maximum: 100 }
-
   validates :email,
     presence: true,
     uniqueness: { case_sensitive: false },
