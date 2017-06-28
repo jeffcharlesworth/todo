@@ -2,11 +2,23 @@
 
 Synopsis
 
-Todo is a basic todo list API. The application uses JSON. It requires the user to authenticate to interact.
+Todo is a basic todo list API. No samples given, no code copied. The application uses JSON. It requires the user to authenticate to interact.
 The user can create lists and items through the API. The application uses BCrypt for authentication, each user is assigned
 an individual password salt for security.
 
-* Ruby 2.1
+Installation
+
+-Ruby 2.1 -RoR 4.2.5
+
+To get started with the app, clone the repo and then install the needed gems:
+
+$ bundle install --without production Next, migrate the database:
+
+$ rails db:migrate Finally, run the test suite to verify that everything is working correctly:
+
+$ rails rspec If the test suite passes, you'll be ready to run the app in a local server:
+
+$ rails server
 
 * sqlite3 for development
 
